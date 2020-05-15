@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:student_attendance/student_detail.dart';
-import 'package:student_attendance/Course_detail.dart';
-import 'package:student_attendance/AddSt_Attendance.dart';
-import 'package:student_attendance/Example_detail.dart';
+import 'package:student_attendance/StudentDep.dart';
 import 'package:student_attendance/CourseDep.dart';
+import 'package:student_attendance/AddSt_Attendance.dart';
+import 'package:student_attendance/select_sub.dart';
+
 
 class Home extends StatefulWidget{
   @override
@@ -49,7 +49,7 @@ class _HomeState extends State<Home>{
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context)=>student_detail())
+                        builder: (context)=>StudentDep())
                 );
               }
           ),
@@ -108,7 +108,7 @@ class _HomeState extends State<Home>{
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context)=>Course_detail())
+                        builder: (context)=>CourseDep())
                 );
               }
           ),
@@ -164,7 +164,7 @@ class _HomeState extends State<Home>{
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context)=>student_detail())
+                        builder: (context)=>StudentDep())
                 );
               }
           ),
@@ -192,7 +192,7 @@ class _HomeState extends State<Home>{
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context)=>Example_detail())
+                        builder: (context)=>select_sub())
                 );
               }
           ),

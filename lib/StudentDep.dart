@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:student_attendance/student_detail.dart';
-import 'package:student_attendance/CIS2.dart';
+import 'package:student_attendance/CIS1.dart';
 
-class CourseDep extends StatefulWidget{
+class StudentDep extends StatefulWidget{
   @override
   CourseDepState createState()=>new CourseDepState();
 }
-class CourseDepState extends State<CourseDep> {
+class CourseDepState extends State<StudentDep> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,23 +28,23 @@ class CourseDepState extends State<CourseDep> {
                       new Image.asset("images/dep1.png",
                         height: 100.0,
                         width: 100.0,
-                        ),
+                      ),
 
 
-                              new Expanded(
-                                child: Padding(
-                                padding: EdgeInsets.only(left:10.0),
-                                  child: Text(
-                                  "Computing & Information Systems",
-                              style:TextStyle(
-                                    fontSize:20.0,
-                                  fontStyle: FontStyle.italic,
-                                  fontWeight: FontWeight.bold,
-                                    color:Colors.black
-                              ),
+                      new Expanded(
+                        child: Padding(
+                          padding: EdgeInsets.only(left:10.0),
+                          child: Text(
+                            "Computing & Information Systems",
+                            style:TextStyle(
+                                fontSize:20.0,
+                                fontStyle: FontStyle.italic,
+                                fontWeight: FontWeight.bold,
+                                color:Colors.black
                             ),
-                                ),
-                              ),
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ),
@@ -53,7 +53,7 @@ class CourseDepState extends State<CourseDep> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context)=>CIS2())
+                          builder: (context)=>CIS1())
                   );
                 }
             ),
@@ -75,15 +75,15 @@ class CourseDepState extends State<CourseDep> {
                       new Expanded(
                         child:Padding(
                           padding: EdgeInsets.only(left:10.0),
-                        child: Text("Food Sciences & Technology",
-                        style:TextStyle(
-                            fontSize:20.0,
-                            fontStyle: FontStyle.italic,
-                            fontWeight: FontWeight.bold,
-                            color:Colors.black
+                          child: Text("Food Sciences & Technology",
+                            style:TextStyle(
+                                fontSize:20.0,
+                                fontStyle: FontStyle.italic,
+                                fontWeight: FontWeight.bold,
+                                color:Colors.black
+                            ),
+                          ),
                         ),
-                      ),
-                      ),
                       ),
                     ],
                   ),
@@ -113,15 +113,15 @@ class CourseDepState extends State<CourseDep> {
                       new Expanded(
                         child:Padding(
                           padding: EdgeInsets.only(left:10.0),
-                        child:Text("Natural Resources",
-                        style:TextStyle(
-                            fontSize:20.0,
-                            fontStyle: FontStyle.italic,
-                            fontWeight: FontWeight.bold,
-                            color:Colors.black
+                          child:Text("Natural Resources",
+                            style:TextStyle(
+                                fontSize:20.0,
+                                fontStyle: FontStyle.italic,
+                                fontWeight: FontWeight.bold,
+                                color:Colors.black
+                            ),
+                          ),
                         ),
-                      ),
-                      ),
                       ),
                     ],
                   ),
@@ -149,15 +149,15 @@ class CourseDepState extends State<CourseDep> {
                       new Expanded(
                         child:Padding(
                           padding: EdgeInsets.only(left:10.0),
-                        child:Text("Physical Sciences & Technology",
-                        style:TextStyle(
-                            fontSize:20.0,
-                            fontStyle: FontStyle.italic,
-                            fontWeight: FontWeight.bold,
-                            color:Colors.black
+                          child:Text("Physical Sciences & Technology",
+                            style:TextStyle(
+                                fontSize:20.0,
+                                fontStyle: FontStyle.italic,
+                                fontWeight: FontWeight.bold,
+                                color:Colors.black
+                            ),
+                          ),
                         ),
-                      ),
-                      ),
                       ),
                     ],
                   ),
@@ -187,15 +187,15 @@ class CourseDepState extends State<CourseDep> {
                       new Expanded(
                         child:Padding(
                           padding: EdgeInsets.only(left:10.0),
-                        child:Text("Sport Sciences & Physical Education",
-                        style:TextStyle(
-                            fontSize:20.0,
-                            fontStyle: FontStyle.italic,
-                            fontWeight: FontWeight.bold,
-                            color:Colors.black
+                          child:Text("Sport Sciences & Physical Education",
+                            style:TextStyle(
+                                fontSize:20.0,
+                                fontStyle: FontStyle.italic,
+                                fontWeight: FontWeight.bold,
+                                color:Colors.black
+                            ),
+                          ),
                         ),
-                      ),
-                      ),
                       ),
                     ],
                   ),
