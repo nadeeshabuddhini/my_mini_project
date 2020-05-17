@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-class select_sub {
-  runApp(new MaterialApp(home: new select_sub()));
+class select_sub extends StatefulWidget {
+  @override
+  select_subState createState()=>new select_subState();
 }
 
-class select_sub extends StatelessWidget {
+class select_subState extends State<select_sub> {
 
   // This widget is the root of your application.
   @override
@@ -45,7 +46,7 @@ Future<ConfirmAction> _asyncConfirmDialog(BuildContext context) async => showDia
     barrierDismissible: false, // user must tap button for close dialog!
     builder: (BuildContext context) => AlertDialog(
         title: Text('Delete This Contact?'),
-        content: StreamBuilder(
+       content: StreamBuilder(
           stream:Firestore.instance.collection("course details").snapshots(),
           builder: (BuildContext context, AsyncSnapshot<QuerySnapshot>snapshot) {
             if(!snapshot.hasData)
@@ -83,11 +84,14 @@ class Tasklist extends StatefulWidget {
 
   class TasklistState extends State<Tasklist>{
     bool _isChecked=false;
+    TasklistState({this.document});
+    final List<DocumentSnapshot>document;
     void onChanged(bool value){
       setState((){
         _isChecked=value;
       });
     }
+
 
     @override
   Widget build(BuildContext context){
@@ -106,11 +110,6 @@ class Tasklist extends StatefulWidget {
                           ],
                         ),
                       );
-
-
-
-
-
 
 
         }
